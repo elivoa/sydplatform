@@ -1,0 +1,649 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"com",
+				"com_get"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/app.component.ts",
+			"settings":
+			{
+				"buffer_size": 428,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "json",
+		"selected_items":
+		[
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"document",
+				"TypeScript: Format Document"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lisp",
+				"Set Syntax: Lisp"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"pcinstallpa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Add Repository"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"go",
+				"Set Syntax: GoSublime: Old syntax file"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"gosyn",
+				"Set Syntax: GoSublime: Old syntax file"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"format",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/bogao/develop/ng2/sydplatform",
+		"/Users/bogao/develop/ng2/sydplatform/app"
+	],
+	"file_history":
+	[
+		"/Users/bogao/develop/ng2/sydplatform/app/dashboard.component.ts",
+		"/Users/bogao/develop/ng2/sydplatform.sublime-project",
+		"/Users/bogao/develop/ng2/quickstart/app/app.component.ts",
+		"/Users/bogao/develop/ng2/sydplatform/app/app.module.ts",
+		"/Users/bogao/develop/ng2/quickstart/app/app-routing.module.ts",
+		"/Users/bogao/develop/ng2/sydplatform/app/app.component.ts",
+		"/Users/bogao/develop/ng2/sydplatform/sydplatform.sublime-project",
+		"/Users/bogao/develop/ng2/quickstart/app/dashboard.component.ts",
+		"/Users/bogao/develop/ng2/sydplatform/index.html",
+		"/Users/bogao/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/bogao/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (OSX).sublime-keymap",
+		"/Users/bogao/develop/ng2/quickstart/package.json",
+		"/Users/bogao/develop/ng2/sydplatform/.gitignore",
+		"/Users/bogao/develop/ng2/sydplatform/.editorconfig",
+		"/Users/bogao/develop/ng2/sydplatform/static/css/base.css",
+		"/Users/bogao/develop/ng2/quickstart/styles.css",
+		"/Users/bogao/develop/ng2/sydplatform/styles.css",
+		"/Users/bogao/develop/ng2/quickstart/app/heroes.component.ts",
+		"/Users/bogao/develop/ng2/sydplatform/app/heroes.component.ts",
+		"/Users/bogao/develop/ng2/sydplatform/LICENSE",
+		"/Users/bogao/develop/ng2/sydplatform/package.json",
+		"/Users/bogao/develop/go/src/github.com/elivoa/got/coreservice/coercion/coercion.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/pages/order/OrderView.html",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/css/customize.css",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/pages/customer/CustomerIndex.html",
+		"/Users/bogao/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/Users/bogao/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/bogao/start: 2014-05-01 01:00:00",
+		"/Users/bogao/develop/alispace/aliprint/src/main/java/com/elivoa/aliprint/entity/AliOrder.java",
+		"/Users/bogao/develop/alispace/aliprint/src/main/test/com/elivoa/yto/model/YTORequestOrder.java",
+		"/Users/bogao/develop/alispace/aliprint/README.md",
+		"/Users/bogao/.emacs",
+		"/Users/bogao/.emacs.purcell.d/init.el",
+		"/Users/bogao/.emacs.d/init.el",
+		"/Users/bogao/Dropbox/backup.sh",
+		"/Users/bogao/develop/IDE/eclipse/Eclipse.app/Contents/MacOS/eclipse.ini",
+		"/Applications/Hearthstone/Strings/zhCN/CREDITS.txt",
+		"/Applications/Hearthstone/Strings/zhCN/GLUE.txt",
+		"/Users/bogao/develop/alispace/.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml",
+		"/Users/bogao/develop/tmp/tapestry/test/pom.xml",
+		"/Users/bogao/develop/alispace/Servers/Tomcat v8.0 Server at localhost-config/context.xml",
+		"/Users/bogao/develop/alispace/Servers/Tomcat v8.0 Server at localhost-config/web.xml",
+		"/Users/bogao/develop/IDE/eclipse javaee sr1/Eclipse.app/Contents/MacOS/eclipse.ini",
+		"/Users/bogao/Library/Mail/V2/IMAP-elivoa@imap.gmail.com/[Gmail].mbox/All Mail.mbox/6EFD142B-BA11-4662-8802-93E390A126B2/Data/3/7/Attachments/73634/1/dom4j-xml/dom4j parse example.java",
+		"/Users/bogao/develop/alispace/aliprint/.gitignore",
+		"/Users/bogao/develop/gitme/gotapestry/static/from_lili/ui2.0/html/inventory/create-inventory-1.html",
+		"/Users/bogao/develop/gitme/gotapestry/static/from_lili/ui2.0/html/inventory/create-inventory-2.html",
+		"/Users/bogao/develop/gitme/gotapestry/static/from_lili/ui2.0/html/order/create-order-1.html",
+		"/Users/bogao/develop/gitme/gotapestry/static/from_lili/ui2.0/html/person/create-person.html",
+		"/Users/bogao/develop/gitme/gotapestry/static/css/global/frame.css",
+		"/Users/bogao/develop/gitme/gotapestry/static/from_lili/ui2.0/css/pages/pg_create_order.css",
+		"/Users/bogao/develop/gitme/gotapestry/src/fake",
+		"/Users/bogao/develop/gitme/gotapestry/src/benchmark/ls.prof",
+		"/Users/bogao/develop/gitme/gotapestry/static/js/native/LodopFuncs.js",
+		"/Users/bogao/develop/gitme/gotapestry/static/lib/fileupload/js/jquery.fileupload.js",
+		"/Users/bogao/develop/gitme/gotapestry/static/lib/fileupload/js/jquery.fileupload-angular.js",
+		"/Users/bogao/develop/gitme/gotapestry/static/lib/fileupload/js/jquery.iframe-transport.js",
+		"/Users/bogao/.emacs.desktop。bk",
+		"/Users/bogao/develop/gitme/gotapestry/src/syd/service/OrderService.go",
+		"/Users/bogao/develop/gitme/gotapestry/static/js/c/order/order_product_selector.coffee",
+		"/Users/bogao/develop/gitme/gotapestry/static/bootstrap/js/bootstrap-modal.min.js",
+		"/Users/bogao/develop/gitme/gotapestry/static/lib/fileupload/js/main.js",
+		"/Users/bogao/develop/gitme/gotapestry/static/js/suggest-control.coffee",
+		"/Users/bogao/develop/gitme/gotapestry/static/js/jquery.js",
+		"/Users/bogao/develop/gitme/gotapestry/static/js/angular.min.js.map",
+		"/Volumes/Elements/详情页设计.txt",
+		"/Users/bogao/Downloads/电子面单打印系统/cpt.exe.config",
+		"/Users/bogao/Downloads/电子面单打印系统/logs/log.txt",
+		"/Users/bogao/develop/workspace/org.iminer.web/pom.xml",
+		"/Users/bogao/develop/go/src/elivoa/alisprite/static/test2/homecontent.html",
+		"/Users/bogao/develop/go/src/elivoa/alisprite/static/test2/publications.html",
+		"/Users/bogao/develop/go/src/elivoa/alisprite/static/test2/awards.html",
+		"/Users/bogao/develop/go/src/elivoa/alisprite/static/test2/home.html",
+		"/Users/bogao/develop/go/src/elivoa/alisprite/static/test2/contact.html",
+		"/Users/bogao/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/bogao/tmp/homepage/homecontent.html",
+		"/Users/bogao/tmp/homepage/home.html",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/model/inventory_model.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/pages/inventory/InventoryIndex.go",
+		"/Users/bogao/Downloads/view",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/components/order/OrderList.html",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/components/order/OrderList.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/dal/inventorydao/inventory_dao.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/startfilm-module.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/components/layout/HeaderNav.html",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/components/layout/HeaderNav.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/model/user_model.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/service/TimeZoneService.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/dal/userdao/user_dao.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/service/UserService.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/model/order_model.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/components/layout/Header.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/test/test1.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/pages/order/OrderList.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/dal/orderdao/order_dao.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/html/order/view-order.html",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/lib/fileupload/js/jquery.fileupload-validate.js",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/service/UserServiceActionService.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/service/CarfilmService.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/start",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/pages/admin/staff/StaffEdit.go",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/lib/fileupload/css/jquery.fileupload-ui-noscript.css",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/html/order/express-order-print-yto.html",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/js/c/order/order_list.coffee",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/html/order/express-order-print-ytonew.html",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/html/order/order-print.css",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/pages/order/PaymentSubmitHere.go",
+		"/Users/bogao/.emacs.d/custom.el",
+		"/Users/bogao/.emacs.d/go",
+		"/Users/bogao/Pictures/千岛湖的备份.photolibrary/Database/Faces/Detected/gO2QcRTlTcSeRTFOe2y1ng.apdetected",
+		"/Users/bogao/Pictures/sweaters.photolibrary/Database/Albums/gO4IGvZyQO+vDZmcMkVpJQ.apalbum",
+		"/Users/bogao/.emacs.d/elpa/auto-complete-20140824.1658/dict/go-mode",
+		"/Users/bogao/tmp/old--css/pages/pg_order_print.css",
+		"/Volumes/ui2.0/html/frame/index.html",
+		"/Users/bogao/.emacs.d/elpa/auto-complete-20140618.2217/dict/go-mode",
+		"/private/tmp/sss",
+		"/Users/bogao/develop/go/src/elivoa/carfilm/static/js/angular.min.js",
+		"/Users/bogao/develop/gitme/gotapestry/src/syd/dal/orderdao/order_dao.go",
+		"/Users/bogao/develop/gitme/gotapestry/src/syd/service/AccountServie.go",
+		"/Users/bogao/develop/gitme/gotapestry/src/syd/model/order_model.go",
+		"/Users/bogao/develop/gitme/gotapestry/src/syd/pages/product/ProductEdit.go",
+		"/Users/bogao/develop/gitme/gotapestry/src/syd/pages/product/ProductEdit.html",
+		"/Users/bogao/develop/gitme/gotapestry/src/start",
+		"/Users/bogao/develop/gitme/gotapestry/static/lib/fileupload/js/jquery.fileupload-validate.js",
+		"/Users/bogao/develop/go/src/github.com/elivoa/got/builtin/services/LinkService.go",
+		"/Users/bogao/develop/gitme/gotapestry/src/syd/pages/order/ViewOrder.go",
+		"/Users/bogao/develop/gitme/gotapestry/src/syd/pages/stat/StatProductSold.html",
+		"/Users/bogao/develop/gitme/gotapestry/bin/gotapestry"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/bogao/develop/go/src/github.com/elivoa",
+			"*.js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"      \n",
+			".replace",
+			"content_area",
+			"shadow",
+			"order_print",
+			"smartvaliddatetime",
+			"Customers",
+			"smartvaliddatetime",
+			"20140501010000000",
+			" ",
+			",",
+			"\\(.*\\)",
+			"\\",
+			"\n;(",
+			"ajax",
+			"angular",
+			"container",
+			"    \n",
+			"      <",
+			"      </",
+			")\n",
+			"\n\t\t\t\t",
+			"sync",
+			"components",
+			"images",
+			"\n      ",
+			"::after",
+			"btop",
+			"<!--\n",
+			"online",
+			"tao'bao",
+			"    \n",
+			"jyim_up",
+			"navigation",
+			"upc",
+			"product",
+			"\n\t\t\t\t",
+			"\n    ",
+			"\n</",
+			"widgets_id",
+			"widgets",
+			"widgets_id",
+			">\n",
+			"测试内容。。。",
+			"}>\");\n",
+			"<table></table>",
+			"></",
+			"\t\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/app.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										365,
+										366
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										55,
+										56
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 100.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 100.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sydplatform.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"heroes.component.ts",
+				"quickstart/app/heroes.component.ts"
+			],
+			[
+				"factory",
+				"static/from_lili/ui2.0/html/inventory/create-inventory-1.html"
+			],
+			[
+				"usermode",
+				"model/user_model.go"
+			],
+			[
+				"usermodel",
+				"model/user_model.go"
+			],
+			[
+				"headernav.go",
+				"components/layout/HeaderNav.go"
+			],
+			[
+				"headernav",
+				"components/layout/HeaderNav.html"
+			],
+			[
+				"userdao.go",
+				"dal/userdao/user_dao.go"
+			],
+			[
+				"userdao",
+				"dal/userdao/user_dao.go"
+			],
+			[
+				"userservice",
+				"service/UserService.go"
+			],
+			[
+				"orderdao",
+				"dal/orderdao/order_dao.go"
+			],
+			[
+				"ordermodel",
+				"model/order_model.go"
+			],
+			[
+				"orderlisthtml",
+				"components/order/OrderList.html"
+			],
+			[
+				"orderlist.go",
+				"components/order/OrderList.go"
+			],
+			[
+				"gomo",
+				".emacs.d/elpa/auto-complete-20140618.2217/dict/go-mode"
+			],
+			[
+				"widgets_id",
+				"widgets/商品插件/upc_inc_goods/widget_upc_inc_goods.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/develop/go/src/github.com/elivoa/elivoaproject.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"format",
+				"toDataFormat"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 385.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
