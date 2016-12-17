@@ -1,36 +1,45 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
-// Compoennts
+// Compoennts,
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './layout/header.component';
 import { LeftnavComponent } from './layout/leftnav.component';
-import { HomepageComponent } from './homepage/homepage.component';
-// import { HeroDetailComponent }  from './hero-detail.component';
-// import { HeroesComponent }      from './heroes.component';
+
+// Pages
+import { HomePage } from './homepage/homepage.component';
+import { UserInfoPage } from './user/userinfo.component';
+import { TestPage } from './user/test.component';
 
 // Services 
-// import { HeroService }          from './hero.service';
+import { AuthService } from './service/auth.service';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    HttpModule,
+    AppRoutingModule,
   ],
   declarations: [
     AppComponent,
-    HomepageComponent,
+
+    HomePage,
+
+    // user
+    UserInfoPage,TestPage,
+
     // layout components
     HeaderComponent, LeftnavComponent,
 
-    // DashboardComponent,
-    // HeroDetailComponent,
-    // HeroesComponent
   ],
-  // providers: [ HeroService ],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+

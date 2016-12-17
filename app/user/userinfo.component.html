@@ -1,0 +1,17 @@
+--{{id}}..
+
+
+
+<div>
+  <h2>User Info page id:"{{id}}" {{ userToken }}</h2>
+
+{{title}}
+  <dl *ngIf="userToken">
+  	<dt>用户名称： </dt>
+  	<dd>{{userToken.name}}</dd>
+  	<dt>用户ID</dt><dd>{{userToken.id}}</dd>
+  	<dt>a</dt><dd>b</dd>
+  	<dt>a</dt><dd>b</dd>
+  	<dt>a</dt><dd>b</dd>
+  </dl>
+</div>

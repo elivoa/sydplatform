@@ -10,7 +10,7 @@ import 'rxjs/add/operator/switchMap';
   templateUrl: 'homepage.component.html',
 })
 
-export class HomepageComponent implements OnInit {
+export class HomePage implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
@@ -18,7 +18,7 @@ export class HomepageComponent implements OnInit {
   ) { }
 
   user: string = "Elivoa";
-
+  
   ngOnInit(): void {
   }
 
