@@ -36,11 +36,11 @@ export class HeaderComponent implements OnInit {
 	}
 
 	getUserToken(): void {
-		this.authService.getUserToken().then(ut => {
-			this.userToken = ut
-			console.log("ut is : ", this.userToken)
-		})
-
+		this.userToken = this.authService.getUserToken()
+		// this.authService.getUserToken().then(ut => {
+		// 	this.userToken = ut
+		// 	console.log("ut is : ", this.userToken)
+		// })
 	}
 
 }

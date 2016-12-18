@@ -1,9 +1,36 @@
+<div class="FR-leftmenu">
+  <dl>
+    <dt>订单管理</dt>
+    <dd><a routerLink="/sale/order-create" routerLinkActive="cur">新增订单</a></dd>
+    <dd><a routerLink="/sale/order-list" routerLinkActive="cur">订单列表</a></dd>
+    <dd><a routerLink="/sale/order-query" routerLinkActive="cur">订单查询</a></dd>
+  </dl>
+</div>
 
-<div style="border:solid 1px green;width:80px;height:100%;float:left;">
-<a routerLink="/sales" routerLinkActive="active">Sales</a><br>
-Stock<br>
-Customer<br>
-Factory<br>
-Produce<br>
-...
+<div class="FR-leftmenu" *ngIf="false"> <!-- Hidden -->
+  <dl>
+    <dt>下单管理</dt>
+    <dd><a routerLink="/sale/order-create" routerLinkActive="cur">新下单</a></dd>
+    <dd><a routerLink="/sale/order-list" routerLinkActive="cur">生产列表</a></dd>
+    <dd><a routerLink="/sale/order-create" routerLinkActive="cur">超单预警</a></dd>
+  </dl>
+  <dl>
+    <dt>生产管理</dt>
+    <dd><a href="#">新样衣</a></dd>
+    <dd><a href="#">样衣列表</a></dd>
+  </dl>
+  <dl>
+    <dt>次品管理</dt>
+    <dd><a href="#">新建返修单</a></dd>
+    <dd><a href="#">返修单列表</a></dd>
+  </dl>
+  <dl>
+    <dt>结账管理</dt>
+    <dd><a href="#">结账管理</a></dd>
+    <dd><a href="#">已结款列表</a></dd>
+  </dl>
+  <dl>
+    <dt>快捷功能</dt>
+    <dd><a href="#">快递单打印</a></dd>
+  </dl>
 </div>

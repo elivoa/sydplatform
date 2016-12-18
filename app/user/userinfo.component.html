@@ -1,7 +1,5 @@
 --{{id}}..
 
-
-
 <div>
   <h2>User Info page id:"{{id}}" {{ userToken }}</h2>
 
@@ -10,8 +8,15 @@
   	<dt>用户名称： </dt>
   	<dd>{{userToken.name}}</dd>
   	<dt>用户ID</dt><dd>{{userToken.id}}</dd>
-  	<dt>a</dt><dd>b</dd>
-  	<dt>a</dt><dd>b</dd>
-  	<dt>a</dt><dd>b</dd>
+  	<dt>用户角色</dt><dd>{{userToken.roles}}</dd>
+  	<dt>Token:</dt>
+  	<dd *ngIf="userToken.token" >
+  		access_token: {{userToken.token.access_token}}<br>
+  		token_type: {{userToken.token.token_type}}<br>
+  		refresh_token: {{userToken.token.refresh_token}}<br>
+  		expiry: {{userToken.token.expiry}}<br>
+  	</dd>
+  	
+  	<dt></dt><dd></dd>
   </dl>
 </div>

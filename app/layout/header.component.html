@@ -1,8 +1,24 @@
-<div style="border:solid 1px red ;width:100%; height:40px;">
-	<div *ngIf="userToken" 
-	  style="border:solid 1px green;float:left;margin:2px;">
-		Welcome <a href="/user/info/{{userToken.id}}">{{userToken.name}}</a>
-	</div>
-	<h6>Header!!!!!!!!!</h6>
-	
+
+<div class="FR-topbar" *ngIf="!userToken">
+  <a href="#"><span class="ICO-setself"></span>登陆</a>
+</div>
+
+<div class="FR-topbar" *ngIf="userToken">
+  欢迎，{{userToken.name}}。
+  <a href="/user/notifications"><span class="ICO-message"></span> 通知</a>
+  <a href="/user/settings"><span class="ICO-setself"></span> 账户设置</a>
+  <a href="/user/logout"><span class="ICO-logout"></span> 退出登录</a>
+</div>
+
+<div class="FR-header">
+  <div class="FR-logo">
+    <h1>圣衣蝶ERP</h1>
+  </div>
+  <div class="FR-menubar">
+    <a class="cur" href="#"><span class="ICO-sell"></span>销售管理</a>
+    <a href="#"><span class="ICO-factory"></span><span>生产管理</span></a>
+    <a href="#"><span class="ICO-stock"></span><span>库存管理</span></a>
+    <a href="#"><span class="ICO-sheet"></span><span>报表统计</span></a>
+    <a href="#"><span class="ICO-set"></span><span>系统设置</span></a>
+  </div>
 </div>

@@ -1,0 +1,94 @@
+<html lang="zh-CN">
+
+  <head>
+    
+    <meta charset="utf-8">
+    <title>库存列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/basic-style.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="FR-topbar">
+      欢迎，admin。
+      <a href="#"><span class="ICO-message"></span> 通知</a><a href="#"><span class="ICO-setself"></span>账 户设置</a><a href="#"><span class="ICO-logout"></span> 退出登录</a>
+  </div>
+  <div class="FR-header">
+    <div class="FR-logo">
+      <h1>圣衣蝶ERP</h1>
+    </div>
+    <div class="FR-menubar">
+      <a href="#"><span class="ICO-sell"></span>销售管理</a> 
+      <a href="#"><span class="ICO-factory"></span><span>生产管理</span></a> 
+      <a  class="cur"href="#"><span class="ICO-stock"></span><span>库存管理</span></a> 
+      <a href="#"><span class="ICO-sheet"></span><span>报表统计</span></a> 
+      <a href="#"><span class="ICO-set"></span><span>系统设置</span></a> 
+    </div>
+  </div>
+  <div class="FR-container">
+    <div class="FR-leftmenu">
+      <dl>
+        <dt>到货管理</dt>
+        <dd><a class="cur" href="#">今日到货</a></dd>
+        <dd><a href="#">到货记录</a></dd>
+      </dl>
+      <dl>
+        <dt>入库管理</dt>
+        <dd><a href="#">新建入库单</a></dd>
+        <dd><a href="#">入库列表</a></dd>
+      </dl>
+      <dl>
+        <dt>出库管理</dt>
+        <dd><a href="#">新建出库单</a></dd>
+        <dd><a href="#">出库列表</a></dd>
+      </dl>
+      <dl>
+        <dt>库存统计</dt>
+        <dd><a href="#">库存统计</a></dd>
+        <dd><a href="#">库存预警</a></dd>
+      </dl>
+    </div>
+    <div class="FR-rightBox">
+      <div class="PG_list_srch">
+        <div class="EL-search">
+          <input type="text"> <a class="btn" href="#"><span>搜索</span></a>
+        </div>
+        <div class="EL-tag ST-mart10">
+          <a href="#">代打印订单</a><a class="cur" href="#">代发货订单</a><a href="#">已发货订单</a><a href="#">已取消订单</a><a href="#">全部订单</a>
+        </div>
+      </div>
+      <div class="EL-table">
+        <table>
+          <tr>
+            <th>客户</th>
+            <th>订单号</th>
+            <th>订单金额</th>
+            <th>订单状态</th>
+            <th>日期</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td><a href="#">杨一</a></td>
+            <td><a href="#">1611270945100478</a></td>
+            <td><span class="EL-price">195</span><span class="EL-txt2">（不含运费）</span></td>
+            <td>待发货</td>
+            <td><span class="EL-txt2">2016-11-27 12:35:36</span></td>
+            <td><a href="#">自提打印订单</a> <span class="EL-vline">|</span> <a href="#">结款</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">杨一</a></td>
+            <td><a href="#">1611270945100478</a></td>
+            <td><span class="EL-price">195</span><span class="EL-txt2">（不含运费）</span></td>
+            <td>待发货</td>
+            <td><span class="EL-txt2">2016-11-27 12:35:36</span></td>
+            <td><a href="#">自提打印订单</a> <span class="EL-vline">|</span> <a href="#">结款</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="EL-pager PG_list">
+        <a href="#"><span class="ICO-pagepre"></span>上一页</a> <a href="">1</a> <a href="">2</a> <a href="">3</a> <a class="cur" href="">4</a> <a href="">5</a> <a href="#">下一页<span class="ICO-pagenext"></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="FR-footer">&copy; 圣衣蝶羊毛衫门市部</div>
+  </body>
+  </html>

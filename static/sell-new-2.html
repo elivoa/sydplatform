@@ -1,0 +1,164 @@
+<html lang="zh-CN">
+
+  <head>
+    
+    <meta charset="utf-8">
+    <title>新建销货单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/basic-style.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="FR-topbar">
+      欢迎，admin。
+      <a href="#"><span class="ICO-message"></span> 通知</a><a href="#"><span class="ICO-setself"></span>账 户设置</a><a href="#"><span class="ICO-logout"></span> 退出登录</a>
+  </div>
+  <div class="FR-header">
+    <div class="FR-logo">
+      <h1>圣衣蝶ERP</h1>
+    </div>
+    <div class="FR-menubar">
+      <a class="cur" href="#"><span class="ICO-sell"></span>销售管理</a> 
+      <a href="#"><span class="ICO-factory"></span><span>生产管理</span></a> 
+      <a href="#"><span class="ICO-stock"></span><span>库存管理</span></a> 
+      <a href="#"><span class="ICO-sheet"></span><span>报表统计</span></a> 
+      <a href="#"><span class="ICO-set"></span><span>系统设置</span></a> 
+    </div>
+  </div>
+  <div class="FR-container">
+    <div class="FR-leftmenu">
+      <dl>
+        <dt>销售管理</dt>
+        <dd><a class="cur" href="sell-new-1.html">新建销货单</a></dd>
+        <dd><a href="sell-list.html">销货单列表</a></dd>
+      </dl>
+      <dl>
+        <dt>退换货管理</dt>
+        <dd><a href="#">新建退换单</a></dd>
+        <dd><a href="#">退换单列表</a></dd>
+      </dl>
+      <dl>
+        <dt>客户管理</dt>
+        <dd><a href="#">新建客户</a></dd>
+        <dd><a href="#">客户列表</a></dd>
+      </dl>
+      <dl>
+        <dt>快捷功能</dt>
+        <dd><a href="#">客户留言</a></dd>
+        <dd><a href="#">批量结款</a></dd>
+        <dd><a href="#">快递单打印</a></dd>
+      </dl>
+    </div>
+    <div class="FR-rightBox">
+      <!--可编辑右侧区域 START-->
+      <div class="FR-content PG-sell-new clearfix">
+        <div class="PG-sellStep2"></div>
+        <div class="EL-selector clearfix">
+          <dl class="col-2">
+            <dt>选择商品</dt>
+            <dd><input type="text"></dd>
+          </dl>
+          <div class="PG-addCustomer">
+            <a href="#"><span class="ICO-addProduct"></span> 新建商品</a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="PG-sell-newLeft">
+        <div class="FR-content PG-sell-product clearfix">
+          <table class="PG-sell-form"><tr>
+              <td class="PG-sell-property EL-table-s">
+                <table>
+                  <tr>
+                    <th>颜色</th>
+                    <th>尺码</th>
+                    <th>数量</th>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">白色</td>
+                    <td>XS</td>
+                    <td><input size="3" type="text" name=""></td>
+                  </tr>
+                  <tr>
+                    <td>S</td>
+                    <td><input size="3" type="text" name=""></td>
+                  </tr>
+                </table>
+              </td>
+              <td class="PG-sell-price">
+                <div class="PG-changePrice">
+                  <span style="display:none" class="EL-price">108</span>
+                  <input type="text">
+                </div>
+                <div class="ST-txtGray">原价：128</div>
+              </td>
+              <td class="EL-form">
+                <dl class="col-1">
+                  <dt>填写商品备注</dt>
+                  <dd><textarea cols="30" rows="4">输入备注信息或选择快捷备注</textarea></dd>
+              </td>
+          </tr></table>
+          <div><a class="BTN-comfirm-2" href="#">加入订单 <i>&gt;&gt;</i></a></div>
+        </div>
+      </div>
+      <div class="PG-sell-newRight">
+        <div class="FR-content">
+          <div class="EL-table">
+            <table>
+              <tr>
+                <th>款号</th>
+                <th>商品名称</th>
+                <th>单价</th>
+                <th>颜色</th>
+                <th>尺码</th>
+                <th>数量</th>
+                <th>合计数量</th>
+                <th class="ST-right">合计金额</th>
+                <th>操作</th>
+              </tr>
+              <tr>
+                <td>8452</td>
+                <td><a href="#">粉色马海毛开衫</a></td>
+                <td rowspan="2"><span class="EL-price">195</span></td>
+                <td>粉色</td>
+                <td>S</td>
+                <td>120</td>
+                <td rowspan="2">240</td>
+                <td class="ST-right" rowspan="2"><span class="EL-price">25,190</span></td>
+                <td rowspan="2">
+                  <a href="#">✎ 编辑</a> <span class="ST-txtGray">|</span> <a href="#">✖ 删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td>8452</td>
+                <td><a href="#">粉色马海毛开衫</a></td>
+                <td>粉色</td>
+                <td>M</td>
+                <td>120</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="FR-content clearfix">
+        <div class="EL-form PG-sellNote">
+          <dl class="col-2">
+            <dt>订单备注</dt><dd><textarea>备注订单信息，例如发货方式等</textarea></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="PG-btn clearfix"><a href="sell-list.html" class="BTN-comfirm-1">提交订单</a></div>
+      <!--可编辑右侧区域 OVER-->
+    </div>
+  </div>
+  <div class="FR-footer">&copy; 圣衣蝶羊毛衫门市部</div>
+<!---
+  <div class="FR-selectormask" style="left:373px;top:315px;width:230px">
+    <div class="EL-customName">张银涛</div>
+    <div class="EL-customName cur">张银涛</div>
+    <div class="EL-customName"><span class="match">张银</span>涛</div>
+    <div class="EL-customName">张银涛</div>
+    <div class="EL-customName">张银涛</div>
+    <div class="EL-customName">张银涛</div>
+  </div>-->
+  </body>
+  </html>

@@ -2,22 +2,24 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { UserToken } from '../data/user_model'
+import { UserToken } from '../../data/user_model'
 
-import { AuthService } from '../service/auth.service'
+import { AuthService } from '../../service/auth.service'
 
 import 'rxjs/add/operator/switchMap';
 
 @Component({
 	moduleId: module.id,
-	selector: "userinfo",
-	templateUrl: './userinfo.component.html',
+	selector: "order-list",
+	templateUrl: './order-list.component.html',
 })
 
 // TODO Add RequireLogin Annotation
-export class UserInfoPage implements OnInit {
+export class OrderListComponent implements OnInit {
 
 	@Input() id: number;
+
+	tab: string; // current tab
 
 	userToken: UserToken;
 
@@ -28,13 +30,13 @@ export class UserInfoPage implements OnInit {
 	) { }
 
 	ngOnInit(): void {
-		console.log('log: go into UserInfoPage.');
 
 		this.route.params
-			.switchMap((params: Params) => this.id = params['id'])
-			.subscribe(() => console.log('ss'));
+			.switchMap((params: Params) => this.tab = params['tab'])
+			// .subscribe(() => console.log(this.tab));
 
-		this.getUserToken()
+		console.log(">> tab is ", this.tab);
+		// this.getUserToken()
 	}
 
 	getUserToken(): void {

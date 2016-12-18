@@ -12,7 +12,16 @@ import { LeftnavComponent } from './layout/leftnav.component';
 // Pages
 import { HomePage } from './homepage/homepage.component';
 import { UserInfoPage } from './user/userinfo.component';
-import { TestPage } from './user/test.component';
+
+import { OrderCreatePage } from './sale/order-create/order-create-page.component';
+import { OrderListPage } from './sale/order-list/order-list-page.component';
+import { OrderQueryPage } from './sale/order-query/order-query-page.component';
+
+// Components
+import { OrderListComponent } from './sale/order-list/order-list.component';
+
+// Common Components
+import { PagerComponent } from './common/pager.component';
 
 // Services 
 import { AuthService } from './service/auth.service';
@@ -30,9 +39,18 @@ import { AuthService } from './service/auth.service';
     HomePage,
 
     // user
-    UserInfoPage,TestPage,
+    UserInfoPage,
 
-    // layout components
+    // sale related pages.
+    OrderCreatePage, OrderListPage, OrderQueryPage,
+
+    // Components
+    OrderListComponent,
+
+    // Common Components
+    PagerComponent,
+
+    // layou components
     HeaderComponent, LeftnavComponent,
 
   ],
