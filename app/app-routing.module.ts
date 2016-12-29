@@ -19,6 +19,7 @@ const routes: Routes = [
 
 	// sales
 	{ path: 'sale/order-create', component: OrderCreatePage },
+	{ path: 'sale', redirectTo: 'sale/order-list/toprint', pathMatch: 'full' },
 	{ path: 'sale/order-list', redirectTo: 'sale/order-list/toprint', pathMatch: 'full' },
 	{ path: 'sale/order-list/:tab', component: OrderListPage },
 	{ path: 'sale/order-query', component: OrderQueryPage },

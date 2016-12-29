@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { UserToken } from '../../data/user_model'
+import { Pair } from '../../data/data_model'
 
 import { AuthService } from '../../service/auth.service'
 
@@ -21,6 +22,18 @@ export class OrderListPage implements OnInit {
 
 	tab: string; // current tab
 
+	debug = false;
+
+	// page values
+	tabs: Pair[] = [
+		new Pair("toprint", "代打印订单"),
+		new Pair("todeliver", "代发货订单"),
+		new Pair("delivering", "已发货订单"),
+		new Pair("done", "已完成订单"),
+		new Pair("canceled", "已取消订单"),
+		new Pair("all", "全部订单"),
+	]
+
 	constructor(
 		private route: ActivatedRoute,
 		private location: Location,
@@ -28,14 +41,13 @@ export class OrderListPage implements OnInit {
 	) { }
 
 	ngOnInit(): void {
-
-		this.route.params
-			.switchMap((params: Params) => this.tab = params['tab'])
-		// .subscribe(() => console.log(this.tab));
-		console.log(">> tab is ", this.tab);
-
 		// Require Admin
 		this.authService.requireRole(["admin"]);
+
+		// TODO: 这里好奇怪,这个语法要改。这里不效率。
+		this.route.params
+			.switchMap((params: Params) => this.tab = params['tab'])
+			.subscribe(() => this.tab = this.tab);
 	}
 
 	getOrderList(): any {

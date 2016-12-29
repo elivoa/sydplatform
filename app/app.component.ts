@@ -1,10 +1,10 @@
 import { Component } from '@angular/core'
-	
+// import './rxjs-operators';
+
 @Component({
 	moduleId: module.id,
 	selector: "my-app",
-	templateUrl:'./app.component.html',
-	styles:[' h1 {font-size:14px;}'], // why it not work?
+	templateUrl: './app.component.html',
 })
 
 export class AppComponent {

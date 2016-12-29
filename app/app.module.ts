@@ -24,7 +24,13 @@ import { OrderListComponent } from './sale/order-list/order-list.component';
 import { PagerComponent } from './common/pager.component';
 
 // Services 
+import { ConstService } from './service/const.service';
 import { AuthService } from './service/auth.service';
+import { OrderService } from './service/order.service'
+import { Utils } from './service/utils.service'
+
+// Pipes
+import { OrderStatusLabelPipe } from './common/syd.pipe'
 
 @NgModule({
   imports: [
@@ -53,8 +59,12 @@ import { AuthService } from './service/auth.service';
     // layou components
     HeaderComponent, LeftnavComponent,
 
+    // Pipes
+    OrderStatusLabelPipe,
   ],
-  providers: [AuthService],
+  providers: [
+    Utils, ConstService, AuthService, OrderService,
+  ],
   bootstrap: [AppComponent]
 })
 
