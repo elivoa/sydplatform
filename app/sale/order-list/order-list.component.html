@@ -1,3 +1,5 @@
+[page:{{page}}; items:{{items}} tab:{{tab}}]
+
 <div class="EL-table PG_table">
   <table>
     <tr>
@@ -9,8 +11,8 @@
       <th>操作</th>
     </tr>
 
-    <tr *ngFor="let order of orderlist">
-      <td><a href="#">{{order.customer.name}}</a></td>
+    <tr *ngFor="let order of orderlist?.data">
+      <td><a href="#">{{order.customer?.name}}</a></td>
       <td><a href="#">{{order.tn}}</a></td>
       <td>
         <span class="EL-price">{{ generateOrderPriceHtml(order) }}</span>
@@ -24,9 +26,8 @@
   </table>
 </div>
 
-debug::::<br>
-<br>total: 
-<br>current: 
-<br>itemsperpage.
-
-<pager *ngIf='showPager' ></pager>
+<pager *ngIf='showPager'
+  [total]="orderlist?.total"
+  [page]="orderlist?.page"
+  [items]="orderlist?.items"
+ ></pager>

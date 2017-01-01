@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
 		private titleService: Title,
 		private authService: AuthService,
 	) {
-		console.log('>> constructor: HeaderComponent')
 		this.userToken = new UserToken(123, "Elivoa")
 	}
 
@@ -31,7 +30,6 @@ export class HeaderComponent implements OnInit {
 	}
 
 	public setTitle(newTitle: string) {
-		console.log('>> set title: ', newTitle)
 		this.titleService.setTitle(newTitle);
 	}
 

@@ -1,15 +1,34 @@
-pager-params:
-<div class="EL-pager PG_list">
-  <a href="#"><span class="ICO-pagepre"></span>上一页</a>
+pager-params: page: {{page}},tsotal{{total}}, items:{{items}}
 
-  <a routerLink="." preserveFragment
-  [queryParams]="{a:'chedan'}">1</a>
-  
-  <a href=""  routerLink="." preserveFragment
-  [queryParams]="{a:'chedan',b:'000'}">2</a>
-  
-  <a href="">3</a> <a class="cur" href="">4</a> <a href="">5</a> 
-  
-  <a href="#">下一页<span class="ICO-pagenext"></span></a>
+<div class="EL-pager PG_list">
+
+	<template [ngIf]="page>0">
+	  <a routerLink="." preserveFragment 
+	     [queryParams]="{page:page-1,items:items}" 
+	     ><span class="ICO-pagepre"></span>上一页</a>
+	</template>
+	<template [ngIf]="page<=0"><!--disabled-->
+	  <a><span class="ICO-pagepre"></span>上一页</a>
+	</template>
+
+  <template ngFor let-pn [ngForOf]="pages">
+  	<template [ngIf]="pn>=0" > 
+	  <a routerLink="." preserveFragment 
+	     [queryParams]="{page:pn,items:items}"
+	     [class]="pageClass(pn)" >{{pn+1}}</a>
+	 </template>
+   	 <template [ngIf]="pn<0" > <a>...</a> </template>
+  </template>
+
+
+	<template [ngIf]="page<maxPage-1">
+	  <a routerLink="." preserveFragment 
+	     [queryParams]="{page:page+1,items:items}"
+	     >下一页<span class="ICO-pagenext"></span></a>
+	</template>
+	<template [ngIf]="page>=maxPage-1"><!--disabled-->
+	  <a>下一页<span class="ICO-pagenext"></span></a>
+	</template>
+
 
 </div>

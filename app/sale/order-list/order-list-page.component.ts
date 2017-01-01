@@ -19,6 +19,8 @@ import 'rxjs/add/operator/switchMap';
 export class OrderListPage implements OnInit {
 
 	@Input() id: number;
+	@Input() page: number;
+	@Input() items: number;
 
 	tab: string; // current tab
 
@@ -47,7 +49,16 @@ export class OrderListPage implements OnInit {
 		// TODO: 这里好奇怪,这个语法要改。这里不效率。
 		this.route.params
 			.switchMap((params: Params) => this.tab = params['tab'])
-			.subscribe(() => this.tab = this.tab);
+			.subscribe();
+
+		this.route.queryParams
+			.switchMap((params: Params) => {
+				this.page = params['page'];
+				this.items = params['items'];
+				return this.tab;
+			})
+			.subscribe();
+
 	}
 
 	getOrderList(): any {

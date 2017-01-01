@@ -1,4 +1,7 @@
-
+export class OrderList {
+	data: Order[]
+	total: number
+}
 
 export class Order {
 

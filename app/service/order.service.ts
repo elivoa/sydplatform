@@ -3,7 +3,7 @@ import { Http, Response, Headers, URLSearchParams, RequestOptions } from '@angul
 import { Observable } from 'rxjs/Observable';
 
 import { UserToken, Token } from '../data/user_model'
-import { Order } from '../data/order_model'
+import { Order, OrderList } from '../data/order_model'
 import { Utils } from './utils.service'
 
 // Statics
@@ -26,10 +26,13 @@ export class OrderService {
 		private utils: Utils,
 	) { }
 
-	getOrderList(tab: String): Observable<Order[]> {
-		let options = this.utils.jsonHeader({
-			"tab": tab,
-		});
+	getOrderList(tab: String, options: {}): Observable<OrderList> {
+		options = options ? options : {}
+		options['tab'] = tab;
+		let options = this.utils.jsonHeader(options)
+		// let options = this.utils.jsonHeader({
+		// 	"tab": tab,
+		// });
 		return this.http.get(this.orderlist_url, options)
 			.map(this.extractData)
 			.catch(this.handleError);
@@ -37,7 +40,8 @@ export class OrderService {
 
 	private extractData(res: Response) {
 		let body = res.json();
-		return body.data || {};
+		// console.log("LLLLLLLLL",body)
+		return body || {};
 	}
 
 	private handleError(error: Response | any) {

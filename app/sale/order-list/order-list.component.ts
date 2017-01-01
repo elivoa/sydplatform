@@ -3,7 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { UserToken } from '../../data/user_model'
-import { Order } from '../../data/order_model'
+import { Order, OrderList } from '../../data/order_model'
 
 import { AuthService } from '../../service/auth.service'
 import { OrderService } from '../../service/order.service'
@@ -24,10 +24,13 @@ export class OrderListComponent implements OnInit {
 	@Input() tab: string; // current tab
 	@Input() showPager: boolean;
 
+	@Input() page: number;
+	@Input() items: number;
+
 	userToken: UserToken;
 
 	errorMessage: string;
-	orderlist: Order[];
+	orderlist: OrderList;
 	mode = 'Observable';
 
 	constructor(
@@ -45,9 +48,11 @@ export class OrderListComponent implements OnInit {
 	ngOnInit(): void { }
 
 	getOrderList() {
-		this.orderService.getOrderList(this.tab)
-			.subscribe(
-			orders => { this.orderlist = orders},
+		this.orderService.getOrderList(this.tab, {
+			"page": this.page,
+			"items": this.items,
+		}).subscribe(
+			orders => { this.orderlist = orders },
 			error => this.errorMessage = <any>error);
 	}
 
@@ -57,11 +62,16 @@ export class OrderListComponent implements OnInit {
 	}
 
 	generateOrderPriceHtml(order: Order): number {
+		var orderprice: number
 		if (order.status == 'todeliver') {
-			return order.total_price;
+			orderprice = order.total_price;
 		} else {
-			return this.getOrderSumOrderPrice(order);
+			orderprice = this.getOrderSumOrderPrice(order);
 		}
+		if (orderprice == undefined) {
+			orderprice = 0
+		}
+		return orderprice
 	}
 
 	generateOrderPriceExtHtml(order: Order): string {
