@@ -3,7 +3,7 @@ import { Http, Response, Headers, URLSearchParams, RequestOptions } from '@angul
 import { Observable } from 'rxjs/Observable';
 
 import { UserToken, Token } from '../data/user_model'
-import { Order, OrderList } from '../data/order_model'
+import { Product, ProductList } from '../data/product_model'
 import { Utils } from './utils.service'
 
 // Statics
@@ -17,23 +17,23 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/switchMap';
 
 @Injectable()
-export class OrderService {
+export class ProductService {
 
-	private orderlist_url = 'http://localhost:8880/api/sale/OrderAPI:list';  // URL to web api
+	private url = 'http://localhost:8880/api/production/ProductApi:list';  // URL to web api
 
 	constructor(
 		private http: Http,
 		private utils: Utils,
 	) { }
 
-	getOrderList(tab: String, params: {}): Observable<OrderList> {
+	getProductList(tab: String, params: {}): Observable<ProductList> {
 		params = params ? params : {}
 		params['tab'] = tab;
 		let options = this.utils.jsonHeader(params)
 		// let options = this.utils.jsonHeader({
 		// 	"tab": tab,
 		// });
-		return this.http.get(this.orderlist_url, options)
+		return this.http.get(this.url, options)
 			.map(this.extractData)
 			.catch(this.handleError);
 	}
@@ -56,16 +56,6 @@ export class OrderService {
 		}
 		console.error(errMsg);
 		return Observable.throw(errMsg);
-	}
-
-
-	// small order services
-	public getSumOrderPrice(order: Order): number {
-		var sum = order.total_price
-		if (order.express_fee > 0) {
-			sum += order.express_fee
-		}
-		return sum
 	}
 
 

@@ -1,6 +1,10 @@
 export class OrderList {
 	data: Order[]
+
+	// pager info
 	total: number
+	page: number
+	items: number
 }
 
 export class Order {

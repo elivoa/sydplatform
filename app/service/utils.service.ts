@@ -16,7 +16,6 @@ export class Utils {
 		let params = new URLSearchParams();
 		// queryParameters.forEach((k,v,));
 		for (let k in queryParameters) {
-			console.log("lll", k,queryParameters[k]);
 			params.set(k, queryParameters[k]);
 		}
 		let options = new RequestOptions({ headers: headers, search: params });

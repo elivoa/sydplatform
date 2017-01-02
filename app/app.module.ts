@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-// Compoennts,
+// Compoennts, Layouts, etc...
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './layout/header.component';
@@ -13,12 +13,17 @@ import { LeftnavComponent } from './layout/leftnav.component';
 import { HomePage } from './homepage/homepage.component';
 import { UserInfoPage } from './user/userinfo.component';
 
+// Sales:Order
 import { OrderCreatePage } from './sale/order-create/order-create-page.component';
 import { OrderListPage } from './sale/order-list/order-list-page.component';
 import { OrderQueryPage } from './sale/order-query/order-query-page.component';
 
-// Components
 import { OrderListComponent } from './sale/order-list/order-list.component';
+
+// Production:Product
+import { ProductListPage } from './production/product-list/product-list-page.component';
+import { ProductListComponent } from './production/product-list/product-list.component';
+
 
 // Common Components
 import { PagerComponent } from './common/pager.component';
@@ -27,6 +32,7 @@ import { PagerComponent } from './common/pager.component';
 import { ConstService } from './service/const.service';
 import { AuthService } from './service/auth.service';
 import { OrderService } from './service/order.service'
+import { ProductService } from './service/product.service'
 import { Utils } from './service/utils.service'
 
 // Pipes
@@ -49,9 +55,11 @@ import { OrderStatusLabelPipe } from './common/syd.pipe'
 
     // sale related pages.
     OrderCreatePage, OrderListPage, OrderQueryPage,
-
-    // Components
     OrderListComponent,
+
+    // production
+    ProductListPage,
+    ProductListComponent,
 
     // Common Components
     PagerComponent,
@@ -63,7 +71,7 @@ import { OrderStatusLabelPipe } from './common/syd.pipe'
     OrderStatusLabelPipe,
   ],
   providers: [
-    Utils, ConstService, AuthService, OrderService,
+    Utils, ConstService, AuthService, OrderService, ProductService
   ],
   bootstrap: [AppComponent]
 })

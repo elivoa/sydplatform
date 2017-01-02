@@ -1,0 +1,48 @@
+<!-- [page:{{page}}; items:{{items}} tab:{{tab}}] -->
+
+<div class="EL-table PG_table">
+  <table>
+    <tr>
+      <th>货号</th>
+      <th>商品名称</th>
+      <th>销售单价</th>
+      <th>库存</th>
+      <th>产品规格</th>
+      <th>操作</th>
+    </tr>
+
+    <tr *ngFor="let product of productlist?.data">
+      <td><a href="#">{{product.product_id}}</a></td>
+      <td>
+        <a href="#">{{product.name}}</a>
+        <span class="EL-txt2" *ngIf="product.status">[ 隐藏 ]</span>
+      </td>
+      <td>
+        <span class="EL-price" *ngIf="product.price>0">{{product.price}}</span>
+        <span class="EL-price" *ngIf="!product.price">0</span>
+        <span class="EL-txt2"></span>
+      </td>
+      <td>
+        <span *ngIf="!product.stock">0</span>
+        <span *ngIf="product.stock>0">{{product.stock}}</span>
+        <span *ngIf="product.stock<0">{{product.stock}}</span>
+      </td>
+      <td><span class="EL-txt2">{{product.Colors}} / {{product.Sizes}}</span></td>
+      <td>
+        <a href="#"><span class="ICO-print"></span>修改商品</a>
+        <span class="EL-vline">|</span>
+        <a href="#"><span class="ICO-shipping"></span>隐藏</a>
+        <span class="EL-vline">|</span>
+        <a href="#"><span class="ICO-cancel"></span>删除</a>
+      </td>
+    </tr>
+
+  </table>
+  <span *ngIf="productlist">共{{productlist.data?.length}}条记录</span>
+</div>
+
+<pager *ngIf='showPager'
+  [total]="productlist?.total"
+  [page]="productlist?.page"
+  [items]="productlist?.items"
+ ></pager>
