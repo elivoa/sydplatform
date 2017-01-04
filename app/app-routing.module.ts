@@ -8,6 +8,7 @@ import { OrderCreatePage } from './sale/order-create/order-create-page.component
 import { OrderListPage } from './sale/order-list/order-list-page.component';
 import { OrderQueryPage } from './sale/order-query/order-query-page.component';
 import { ProductListPage } from './production/product-list/product-list-page.component';
+import { ProductEditPage } from './production/product-edit/product-edit-page.component';
 
 const routes: Routes = [
 	// { path: '', redirectTo: '/homepage', pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
 	{ path: 'production', redirectTo: 'production/product-list/all', pathMatch: 'full' },
 	{ path: 'production/product-list', redirectTo: 'production/product-list/all', pathMatch: 'full' },
 	{ path: 'production/product-list/:tab', component: ProductListPage },
+	{ path: 'production/product-edit/:id', component: ProductEditPage },
 
 	// Default to homepage.
 	{ path: '**', redirectTo: "homepage" }

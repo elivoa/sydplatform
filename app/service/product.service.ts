@@ -34,11 +34,21 @@ export class ProductService {
 		// 	"tab": tab,
 		// });
 		return this.http.get(this.url, options)
-			.map(this.extractData)
+			.map(this.listData)
 			.catch(this.handleError);
 	}
 
-	private extractData(res: Response) {
+	getProduct(id: number,params:{}):Observable<Product>{
+		let options = this.utils.jsonHeader({"id":id})
+		return this.http.get("http://localhost:8880/api/production/ProductApi:get", options)
+				.map((res: Response)=>{
+					let body = res.json();
+					return body || {}
+				}).catch(this.handleError);	
+	}
+
+
+	private listData(res: Response) {
 		let body = res.json();
 		// console.log("LLLLLLLLL",body)
 		return body || {};
@@ -54,7 +64,7 @@ export class ProductService {
 		} else {
 			errMsg = error.message ? error.message : error.toString();
 		}
-		console.error(errMsg);
+		console.error("ERROR:",errMsg);
 		return Observable.throw(errMsg);
 	}
 

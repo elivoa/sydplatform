@@ -2,9 +2,16 @@
 	"folders":
 	[
 		{
-			"path": ".",
-			"folder_exclude_patterns": ["node_modules"],
-    		"file_exclude_patterns": ["*.js.map","*.js"],
+			"file_exclude_patterns":
+			[
+				"*.js.map",
+				"*.js"
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules"
+			],
+			"path": "."
 		}
 	]
 }

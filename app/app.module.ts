@@ -23,6 +23,7 @@ import { OrderListComponent } from './sale/order-list/order-list.component';
 // Production:Product
 import { ProductListPage } from './production/product-list/product-list-page.component';
 import { ProductListComponent } from './production/product-list/product-list.component';
+import { ProductEditPage } from './production/product-edit/product-edit-page.component';
 
 
 // Common Components
@@ -58,7 +59,7 @@ import { OrderStatusLabelPipe } from './common/syd.pipe'
     OrderListComponent,
 
     // production
-    ProductListPage,
+    ProductListPage, ProductEditPage,
     ProductListComponent,
 
     // Common Components

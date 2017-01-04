@@ -12,9 +12,11 @@
     </tr>
 
     <tr *ngFor="let product of productlist?.data">
-      <td><a href="#">{{product.product_id}}</a></td>
+      <td>{{product.product_id}}</td>
       <td>
-        <a href="#">{{product.name}}</a>
+        <a [routerLink]="['/production/product-edit/',product.id]">
+          {{product.name}}
+        </a>
         <span class="EL-txt2" *ngIf="product.status">[ 隐藏 ]</span>
       </td>
       <td>
@@ -29,11 +31,11 @@
       </td>
       <td><span class="EL-txt2">{{product.Colors}} / {{product.Sizes}}</span></td>
       <td>
-        <a href="#"><span class="ICO-print"></span>修改商品</a>
+        <a [routerLink]="['/production/product-edit/',product.id]">修改商品</a>
         <span class="EL-vline">|</span>
-        <a href="#"><span class="ICO-shipping"></span>隐藏</a>
+        <a href="#">隐藏</a>
         <span class="EL-vline">|</span>
-        <a href="#"><span class="ICO-cancel"></span>删除</a>
+        <a href="#">删除</a>
       </td>
     </tr>
 
@@ -41,8 +43,4 @@
   <span *ngIf="productlist">共{{productlist.data?.length}}条记录</span>
 </div>
 
-<pager *ngIf='showPager'
-  [total]="productlist?.total"
-  [page]="productlist?.page"
-  [items]="productlist?.items"
- ></pager>
+<pager *ngIf='showPager' [total]="productlist?.total" [page]="productlist?.page" [items]="productlist?.items"></pager>
