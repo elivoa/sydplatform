@@ -1,18 +1,28 @@
 <div class="FR-leftmenu">
   <dl>
     <dt>订单管理</dt>
-    <dd><a routerLink="/sale/order-create" [queryParams]="{a:'chedan'}" routerLinkActive="cur">新增订单</a></dd>
+    <dd><a routerLink="/sale/order-create" routerLinkActive="cur">新增订单</a></dd>
     <dd><a routerLink="/sale/order-list" routerLinkActive="cur">订单列表</a></dd>
     <dd><a routerLink="/sale/order-query" routerLinkActive="cur">订单查询</a></dd>
   </dl>
-</div>
+  <dl>
+    <dt>产品管理</dt>
+    <dd><a routerLink="/production/product-list" routerLinkActive="cur">产品列表</a></dd>
+  </dl>
+  <dl>
+    <dt>客户管理</dt>
+    <dd><a routerLink="/customer/customer-list" routerLinkActive="cur">客户列表</a></dd>
+  </dl>
 
-<div class="FR-leftmenu" *ngIf="false"> <!-- Hidden -->
+  <dl>
+    <dd><a>---------- 分隔符 ----------</a></dd>
+  </dl>
+
   <dl>
     <dt>下单管理</dt>
-    <dd><a routerLink="/sale/order-create" routerLinkActive="cur">新下单</a></dd>
-    <dd><a routerLink="/sale/order-list" routerLinkActive="cur">生产列表</a></dd>
-    <dd><a routerLink="/sale/order-create" routerLinkActive="cur">超单预警</a></dd>
+    <dd><a routerLink="/production/new-order" routerLinkActive="cur">新下单</a></dd>
+    <dd><a routerLink="/production/manufact-list" routerLinkActive="cur">生产列表</a></dd>
+    <dd><a routerLink="/production/over-manufact" routerLinkActive="cur">超单预警</a></dd>
   </dl>
   <dl>
     <dt>生产管理</dt>
@@ -33,4 +43,7 @@
     <dt>快捷功能</dt>
     <dd><a href="#">快递单打印</a></dd>
   </dl>
+
+
 </div>
+

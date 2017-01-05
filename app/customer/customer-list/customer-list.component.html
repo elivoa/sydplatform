@@ -1,0 +1,37 @@
+<!-- [page:{{page}}; items:{{items}} tab:{{tab}}] -->
+
+<div class="EL-table PG_table">
+  <table>
+    <tr>
+      <th style="width:25px;">ID</th>
+      <th>姓名</th>
+      <th>电话</th>
+      <th>省</th>
+      <th style="width:220px;">地址</th>
+      <th style="width:220px;">备注</th>
+      <!--<th>欠款</th>-->
+      <th style="width:62px;">来店时间</th>
+      <th style="width:75px;">操作</th>
+    </tr>
+
+    <tr *ngFor="let person of customers?.data">
+      <td>{{person.id}}</td>
+      <td>{{person.name}}</td>
+      <td>{{person.phone}}</td>
+      <td>{{person.city}}</td>
+      <td>{{person.address}}</td>
+      <td>{{person.note}}</td>
+      <!--<td>{{person.account_ballance}}</td>-->
+      <td><span class="EL-txt2">{{person.create_time | date:'yyyy-MM-dd'}}</span></td>
+      <td>
+        <a [routerLink]="['/customer/customer-edit/',person.id]">修改</a>
+        <span class="EL-vline">|</span>
+        <a href="#">删除</a>
+      </td>
+    </tr>
+
+  </table>
+  <span *ngIf="productlist">共{{productlist.data?.length}}条记录</span>
+</div>
+
+<pager *ngIf='showPager' [total]="productlist?.total" [page]="productlist?.page" [items]="productlist?.items"></pager>

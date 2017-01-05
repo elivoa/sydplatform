@@ -1,0 +1,12 @@
+<div class="PG_list_srch">
+  <div class="EL-search">
+    <input type="text"> <a class="btn" href="#"><span>搜索</span></a>
+  </div>
+  <div class="EL-tag ST-mart10">
+    <a *ngFor="let tab of tabs"
+      routerLinkActive="cur"
+      [routerLink]="['/production/product-list', tab.key]" >{{tab.value}}</a>
+  </div>
+</div>
+
+<customer-list [tab]="tab" [showPager]="true" [page]="page" [items]="items"></customer-list>
