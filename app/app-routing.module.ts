@@ -34,9 +34,12 @@ const routes: Routes = [
   {path: 'production/product-edit/:id', component: ProductEditPage},
 
   // customer
-  {path: 'customer', redirectTo: 'customer/customer-list', pathMatch: 'full'},
-  // {path: 'customer/customer-list', redirectTo: 'customer/customer-list/:type', pathMatch: 'full'},
+  {path: 'customer', redirectTo: 'customer/customer-list/all', pathMatch: 'full'},
+  {path: 'customer/customer-list', redirectTo: 'customer/customer-list/all', pathMatch: 'full'},
   {path: 'customer/customer-list', component: CustomerListPage},
+  {path: 'customer/customer-list/:tab', component: CustomerListPage},
+  // {path: 'customer/customer-edit/:id', component: CustomerListPage},
+
   // { path: 'production/product-edit/:id', component: ProductEditPage },
 
   // Default to homepage.

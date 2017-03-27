@@ -62,12 +62,6 @@ export class ProductListPage implements OnInit {
 
 	}
 
-	getOrderList(): any {
-
-
-		return null;
-	}
-
 	goBack(): void {
 		this.location.back()
 	}

@@ -39,24 +39,23 @@ export class CustomerListPage implements OnInit {
     this.authService.requireRole(["admin"]);
 
     // fix tabs
-    // this.tabs.push(new Pair("all", "全部"))
-    // for (var i = 65; i <= 90; i++) {
-    // 	this.tabs.push(new Pair(String.fromCharCode(i), String.fromCharCode(i)))
-    // }
-    // this.tabs.push(new Pair("#", "#"))
+    this.tabs.push(new Pair("all", "全部"))
+    for (var i = 65; i <= 90; i++) {
+      this.tabs.push(new Pair(String.fromCharCode(i), String.fromCharCode(i)))
+    }
+    this.tabs.push(new Pair("#", "#"))
 
     // TODO: 这里好奇怪,这个语法要改。这里不效率。
-    // this.route.params
-    // 	.switchMap((params : Params) => this.tab = params['tab'])
-    // 	.subscribe();
+    this.route.params
+      .switchMap((params: Params) => this.tab = params['tab'])
+      .subscribe();
 
     this.route.queryParams
-    // 	.switchMap((params: Params) => {
-    // 		this.page = params['page'];
-    // 		this.items = params['items'];
-    // 		return this.tab;
-    // 	})
-    // 	.subscribe();
+      .switchMap((params: Params) => {
+        this.page = params['page'];
+        this.items = params['items'];
+        return this.tab;
+      }).subscribe();
 
   }
 

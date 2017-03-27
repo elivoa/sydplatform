@@ -10,6 +10,7 @@ import {ProductService} from '../../service/product.service'
 
 import 'rxjs/add/operator/switchMap';
 
+//noinspection TypeScriptValidateTypes
 @Component({
   moduleId: module.id,
   selector: "product-list",
@@ -57,6 +58,14 @@ export class ProductListComponent implements OnInit {
         this.productlist = products
       },
       error => this.errorMessage = <any>error);
+  }
+
+  onHide() {
+    console.log("hide", this.id)
+  }
+
+  onShow() {
+    console.log("show", this.id)
   }
 
 

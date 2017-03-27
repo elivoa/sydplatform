@@ -1,4 +1,4 @@
-<!-- [page:{{page}}; items:{{items}} tab:{{tab}}] -->
+<div style="clear:both">DEVINFO:[page:{{page}}; items:{{items}} tab:{{tab}}]</div>
 
 <div class="EL-table PG_table">
   <table>
@@ -6,10 +6,10 @@
       <th style="width:25px;">ID</th>
       <th>姓名</th>
       <th>电话</th>
-      <th>省</th>
+      <!--<th>省</th>-->
       <th style="width:220px;">地址</th>
       <th style="width:220px;">备注</th>
-      <!--<th>欠款</th>-->
+      <th>欠款</th>
       <th style="width:62px;">来店时间</th>
       <th style="width:75px;">操作</th>
     </tr>
@@ -18,10 +18,10 @@
       <td>{{person.id}}</td>
       <td>{{person.name}}</td>
       <td>{{person.phone}}</td>
-      <td>{{person.city}}</td>
+      <!--<td>{{person.city}}</td>-->
       <td>{{person.address}}</td>
       <td>{{person.note}}</td>
-      <!--<td>{{person.account_ballance}}</td>-->
+      <td align="right  "><span class="EL-price">{{person.account_ballance}}</span></td>
       <td><span class="EL-txt2">{{person.create_time | date:'yyyy-MM-dd'}}</span></td>
       <td>
         <a [routerLink]="['/customer/customer-edit/',person.id]">修改</a>

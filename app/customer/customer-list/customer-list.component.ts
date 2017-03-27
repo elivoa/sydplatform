@@ -47,6 +47,7 @@ export class CustomerListComponent implements OnInit {
 
   getCustomerList() {
     this.personService.getCustomerList("customer", {
+      "tab": this.tab,
       "page": this.page,
       "items": this.items,
       "orderby": "id",// default order by CreateTime desc.

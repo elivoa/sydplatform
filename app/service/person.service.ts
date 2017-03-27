@@ -4,8 +4,8 @@ import {Observable} from 'rxjs/Observable';
 
 import {UserToken, Token} from '../data/user_model'
 import {Person, PersonList} from '../data/person_model'
+import {ConstService} from '../service/const.service'
 import {Utils} from './utils.service'
-
 // Statics
 import 'rxjs/add/observable/throw';
 
@@ -19,23 +19,22 @@ import 'rxjs/add/operator/switchMap';
 @Injectable()
 export class PersonService {
 
-  private url = 'http://localhost:8880/api/customer/customer:listCustomer';  // URL to web api
-
-  constructor(private http: Http, private utils: Utils,) {
+  constructor(private http: Http, private utils: Utils, private config: ConstService) {
   }
 
   getCustomerList(personType: String, params: {}): Observable<PersonList> {
     params = params ? params : {}
     params['type'] = personType;
     let options = this.utils.jsonHeader(params)
-    return this.http.get(this.url, options)
+    return this.utils.httpget("customer/customer:listCustomer", params)
       .map(this.listData)
       .catch(this.handleError);
+    // return this.http.get(this.config.api("customer/customer:listCustomer"), options)
   }
 
+  // TODO: params not used.
   getCustomer(id: number, params: {}): Observable<Person> {
-    let options = this.utils.jsonHeader({"id": id})
-    return this.http.get("http://localhost:8880/api/customer/Customer:get", options)
+    return this.utils.httpget("customer/Customer:get", {"id": id})
       .map((res: Response) => {
         let body = res.json();
         return body || {}
@@ -60,6 +59,5 @@ export class PersonService {
     console.error("ERROR:", errMsg);
     return Observable.throw(errMsg);
   }
-
 
 }

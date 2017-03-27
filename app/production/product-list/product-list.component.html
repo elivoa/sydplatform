@@ -31,9 +31,9 @@
       </td>
       <td><span class="EL-txt2">{{product.Colors}} / {{product.Sizes}}</span></td>
       <td>
-        <a [routerLink]="['/production/product-edit/',product.id]">修改商品</a>
-        <span class="EL-vline">|</span>
-        <a href="#">隐藏</a>
+        <a [routerLink]="['/production/product-edit/',product.id]">修改商品</a><span class="EL-vline">|</span>
+        <a *ngIf="!product.status" (onclick)="onHide()">隐藏</a>
+        <a *ngIf="product.status" (onclick)="onShow()">显示</a>
         <span class="EL-vline">|</span>
         <a href="#">删除</a>
       </td>
